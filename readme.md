@@ -18,7 +18,7 @@ The instructions here refer to the starter example in this repository which you 
 
 ## The client Application
 
-With the server running, open <http://locsalhost:3000> in a browser, the index.html page will be loaded.
+With the server running, open <http://localhost:3000> in a browser, the index.html page will be loaded.
 
 It should look like this with form fields for data entry, buttons to perform calculations (by calling the API), and a space to show the result (from the API).
 
