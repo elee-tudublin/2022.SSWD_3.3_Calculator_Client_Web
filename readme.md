@@ -88,7 +88,7 @@ After adding the function save **index.js** and reload the client app in your br
 
 Whenever the page loads we need to associate the **```calcAdd()```** function with its button. The following function, **```loadCalculator()```** adds an **Event Listener** for the add button.
 
-Define the function after **calcAdd()** and then call the function so that it
+Define the function after **```calcAdd()```** and then call the function so that it
 executes whenever the page is loaded.
 
 ```javascript
@@ -188,7 +188,7 @@ async function getDataAsync(url) {
 
 ### Modify calcAdd() so that it uses the API
 
-The JSON returned by the API is stored in the result variable. This **result** is an object containing:
+The JSON returned by the API is stored in the result variable. This **result** is an object containing the result:
 
 ![JSON Object](.\media\JSON_Result.png)
 
@@ -376,3 +376,4 @@ export {
 ------
 
 **Enda Lee 2022**
+
