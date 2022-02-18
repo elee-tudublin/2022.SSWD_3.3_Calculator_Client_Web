@@ -84,13 +84,9 @@ async function calcAdd() {
     }
 ```
 
-After adding the function save **index.js** and reload the client app in your
-browser. You should notice that the add button doesn’t yet call the function.
-That’s because we haven’t added an event listener yet.
+After adding the function save **index.js** and reload the client app in your browser. You should notice that the add button doesn’t yet call the function. That’s because we haven’t added an event listener yet.
 
-Whenever the page loads we need to associate the **```calcAdd()```** function with its
-button. The following function, **```loadCalculator()```** adds an
-**Event Listener** for the add button.
+Whenever the page loads we need to associate the **```calcAdd()```** function with its button. The following function, **```loadCalculator()```** adds an **Event Listener** for the add button.
 
 Define the function after **calcAdd()** and then call the function so that it
 executes whenever the page is loaded.
@@ -116,8 +112,7 @@ export {
 
 ### Now try it
 
-Open the browser console to see the log. Check if the input values were read
-correctly and displayed on the page.
+Open the browser console to see the log. Check if the input values were read correctly and displayed on the page.
 
 ![Calculator form](./media/135d550d5d95f0dae5bdb72eba772127.png)
 
@@ -160,9 +155,7 @@ const reqInit = { method: 'GET', headers: headers, mode: 'cors', cache: 'default
 
 ### The getDataAsync(url) function
 
-This function will be used whenever data from the API is required. The **url**
-parameter should define the exact endpoint and include parameters required. The
-function returns any JSON data sent in the response.
+This function will be used whenever data from the API is required. The **url** parameter should define the exact endpoint and include parameters required. The function returns any JSON data sent in the response.
 
 ```javascript
 // Asynchronous Function getDataAsync from a url and return
@@ -227,7 +220,7 @@ async function calcAdd() {
   // Log to the browser console to see if it worked and also what the JSON contains
   console.log('result: ', result);
 
-  // Build the answer text - inputs only for now
+  // Build the answer text using the values returned: a + b = answer
   answerText = `${result.a} ${result.operator} ${result.b} = ${result.answer}`;
 
   // display the two inputs on the page
