@@ -8,7 +8,7 @@ The purpose of this lab tutorial is to demonstrate web client interaction with s
 
 ## Prerequisites
 
-This tutorial continues from **[part 2](https://github.com/elee-tudublin/2022.SSWD_3.2_Calculator_API)**. 
+This tutorial is dependant on the completed API from **[part 2](https://github.com/elee-tudublin/2022.SSWD_3.2_Calculator_API)**. The client application which you will build here will retrieve data from the API and display it in a web page..
 
 You will need the web API running on <http://localhost:5000> to accept calculation requests and respond with results.
 
@@ -243,7 +243,7 @@ Also open the browser console to see any errors.
 
 ![calculator error](./media/aae55d33904dee14913f6eebd3b68d5b.png)
 
-This doesn’t look too good! The error state that *Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource*.
+This doesn’t look too good! The error states -  *Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource*.
 
 Earlier we set CORS (Cross Origin Resource Sharing) as an option in the request header, however that only works if the server-side it set to allow cross-origin requests from http://localhost:3000 to http://localhost:5000.
 
